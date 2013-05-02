@@ -5,6 +5,7 @@ from pokertrees import *
 from pokerstrategy import *
 from environment import *
 import random
+import math
 
 class TDCFRAgent(Agent):
     def __init__(self, rules, seat, gametree=None):
@@ -16,6 +17,7 @@ class TDCFRAgent(Agent):
         if self.gametree.root is None:
             self.gametree.build()
         self.strategy.build_default(self.gametree)
+        self.hands_played = 0
         self.transition_probs = { }
         self.q_function = { }
         self.avg_posregret = { }
@@ -51,34 +53,53 @@ class TDCFRAgent(Agent):
         """
         For now, we assume all imperfect information is revealed at the end of the episode.
         """
+        self.hands_played += 1
+        alpha = 0.03
         for infoset,action in self.episode_history:
             total_visits = sum(self.node_visits[infoset])
+            alpha = min(0.1, 1000.0 / max(1,total_visits))
             for i,node in enumerate(self.gametree.information_sets[infoset]):
                 if node.holecards == state.holecards:
                     # we were in this state all along, so increase its probability and update the q function for the (s,a) pair
-                    self.transition_probs[infoset][i] = 1.0 / (total_visits+1) * (total_visits * self.transition_probs[infoset][i] + 1)
-                    self.q_function[infoset][i][action] = 1.0 / (self.action_counts[infoset][i][action]+1) * (self.action_counts[infoset][i][action] * self.q_function[infoset][i][action] + self.reward)
+                    #self.transition_probs[infoset][i] = 1.0 / (total_visits+1) * (total_visits * self.transition_probs[infoset][i] + 1)
+                    #self.q_function[infoset][i][action] = 1.0 / (self.action_counts[infoset][i][action]+1) * (self.action_counts[infoset][i][action] * self.q_function[infoset][i][action] + self.reward)
+                    self.transition_probs[infoset][i] = (1.0 - alpha) * self.transition_probs[infoset][i] + alpha
+                    self.q_function[infoset][i][action] = (1.0 - alpha) * self.q_function[infoset][i][action] + alpha * self.reward
                     self.node_visits[infoset][i] += 1
                     self.action_counts[infoset][i][action] += 1
                 else:
                     # we were not in this state, so decrease its probability
-                    self.transition_probs[infoset][i] = 1.0 / (total_visits+1) * (total_visits * self.transition_probs[infoset][i])
+                    #self.transition_probs[infoset][i] = 1.0 / (total_visits+1) * (total_visits * self.transition_probs[infoset][i])
+                    self.transition_probs[infoset][i] = (1.0 - alpha) * self.transition_probs[infoset][i]
 
     def set_infoset(self, infoset):
         self.infoset = infoset
 
     def get_action(self):
         self.update_policy(self.infoset)
-        #print 'Infoset: {0} Probs: {1} Posregrets: {2}'.format(self.infoset, self.strategy.probs(self.infoset), self.avg_posregret[self.infoset])
-        action = self.strategy.sample_action(self.infoset)
-        self.episode_history.append((self.infoset, action))
+        epsilon = 0.1 #* (10000.0 / (10000.0 + self.hands_played))
+        if random.random() < epsilon:
+            action = self.random_action()
+            self.episode_history = [(self.infoset, action)]
+        else:
+            #print 'Infoset: {0} Probs: {1} Posregrets: {2}'.format(self.infoset, self.strategy.probs(self.infoset), self.avg_posregret[self.infoset])
+            action = self.strategy.sample_action(self.infoset)
+            self.episode_history.append((self.infoset, action))
         return action
+
+    def random_action(self):
+        a = random.randrange(0,3)
+        node = self.gametree.information_sets[self.infoset][0]
+        if (a == FOLD and node.fold_action is None) or (a == CALL and node.call_action is None) or (a == RAISE and node.raise_action is None):
+            return self.random_action()
+        return a
 
     def observe_reward(self, r):
         self.reward += r
 
     def update_policy(self, infoset):
         probs = self.strategy.probs(infoset)
+        example_state = self.gametree.information_sets[infoset][0]
         winnings = [0,0,0]
         for i,node in enumerate(self.gametree.information_sets[infoset]):
             for action in range(3):
@@ -87,8 +108,9 @@ class TDCFRAgent(Agent):
         posregrets = [max(0,winnings[action] - ev) for action in range(3)]
         infoset_visits = sum(self.node_visits[infoset])
         self.avg_posregret[infoset] = [1.0 / (infoset_visits+1) * (self.avg_posregret[infoset][action] * infoset_visits + posregrets[action]) for action in range(3)]
+        #alpha = 0.00001
+        #self.avg_posregret[infoset] = [(1.0 - alpha) * self.avg_posregret[infoset][action] + alpha * posregrets[action] for action in range(3)]
         total_posregret = sum(self.avg_posregret[infoset])
-        example_state = self.gametree.information_sets[infoset][0]
         probs = [0,0,0]
         if total_posregret == 0:
             equal_prob = 1.0 / len(example_state.children)

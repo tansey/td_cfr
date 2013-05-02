@@ -54,6 +54,34 @@ class HumanAgent(Agent):
             return CALL
         return RAISE
 
+class SavedAgent(Agent):
+    def __init__(self, rules, seat, filename):
+        Agent.__init__(self, rules, seat)
+        self.strategy = Strategy(seat)
+        self.strategy.load_from_file(filename)
+
+    def set_infoset(self, infoset):
+        self.infoset = infoset
+
+    def get_action(self):
+        return self.strategy.sample_action(self.infoset)
+
+class StationaryRandomAgent(Agent):
+    def __init__(self, rules, seat, gametree=None):
+        Agent.__init__(self, rules, seat)
+        self.strategy = Strategy(seat)
+        if gametree is None:
+            gametree = GameTree(rules)
+        if gametree.root is None:
+            gametree.build()
+        self.strategy.build_random(gametree)
+
+    def set_infoset(self, infoset):
+        self.infoset = infoset
+
+    def get_action(self):
+        return self.strategy.sample_action(self.infoset)
+
 class GameSimulator(object):
     def __init__(self, rules, agents, verbose=False, showhands=True):
         self.agents = agents
