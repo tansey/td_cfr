@@ -72,7 +72,7 @@ def create_skewed_agents(rules, skewer, cfr_iterations, filename_prefix, player=
 if __name__ == '__main__':
     if len(sys.argv) < 6:
         print 'Format: python skew_agents.py <strat_file_prefix> <player> <iterations> <winbonus|losspenalty|gaussnoise> [params]'
-        sys.exit(0) 
+        sys.exit(0)
 
     leduc = leduc_rules()
 
