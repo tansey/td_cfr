@@ -34,10 +34,10 @@ Requirements = Precise
 
 """)
 
-job = """Log = {0}/condor_logs/{1}.log
+job = """Log = {0}/condor_logs/{1}_player{2}.log
 Arguments = skew_agents.py {0}/results/{1} {2} {3} {4} {5}
-Output = {0}/output/{1}.out
-Error = {0}/error/{1}.log
+Output = {0}/output/{1}_player{2}.out
+Error = {0}/error/{1}_player{2}.log
 Queue 1
 
 """
