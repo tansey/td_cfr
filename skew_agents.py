@@ -62,7 +62,7 @@ def create_skewed_agents(rules, skewer, cfr_iterations, filename_prefix, player=
         print 'Saving agents...'
         for i in range(rules.players):
             if player is None or player is i:
-                cfr.profile.strategies[i].save_to_file(filename_prefix + i + '.strat')
+                cfr.profile.strategies[i].save_to_file(filename_prefix + '_player' + str(i) + '.strat')
         print 'Done!'
         print ''
     else:
@@ -94,4 +94,4 @@ if __name__ == '__main__':
         stdev[player] = float(sys.argv[6])
         shaper = GaussianNoise(mu, stdev)
 
-    create_skewed_agents(leduc, shaper, iterations, 'orange', player=player, verbose=True)
+    create_skewed_agents(leduc, shaper, iterations, strat_file, player=player, verbose=True)
