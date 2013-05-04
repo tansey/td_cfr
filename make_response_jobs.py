@@ -35,10 +35,10 @@ Requirements = Precise
 
 """)
 
-job = """Log = {0}/condor_logs/{1}_player{2}_response.log
-Arguments = robust_response.py 
-Output = {0}/output/{1}_player{2}_response.out
-Error = {0}/error/{1}_player{2}_response.log
+job = """Log = {0}/condor_logs/{1}_player{2}_response{3}.log
+Arguments = robust_response.py {4} {5} {3} {6} {7}
+Output = {0}/output/{1}_player{2}_response{3}.out
+Error = {0}/error/{1}_player{2}_response{3}.log
 Queue 1
 
 """
@@ -50,23 +50,28 @@ for player in range(2):
     for response_player in range(2):
         if response_player == player:
             continue
-        for prob_fixed_level for range(11):
+        for prob_fixed_level in range(11):
             prob_fixed = prob_fixed_level / 10.0
             for percentage_int in range(-10,11):
                 percentage = percentage_int / 100.0
-                strat_file = strat_str.format(stationary_dir, 'winbonus_{0}'.format(percentage), player)
-                response_file = strat_str.format(stationary_dir, 'winbonus_{0}'.format(percentage), player, prob_fixed)
-                f.write(job.format(strat_file, response_player, prob_fixed, iterations, response_file))
-                strat_file = strat_str.format(stationary_dir, 'losspenalty_{0}'.format(percentage), player)
-                response_file = strat_str.format(stationary_dir, 'losspenalty_{0}'.format(percentage), player, prob_fixed)
-                f.write(job.format(strat_file, response_player, prob_fixed, iterations, response_file))
+                
+                prefix = 'winbonus_{0}'.format(percentage)
+                strat_file = strat_str.format(stationary_dir, prefix, player)
+                response_file = strat_str.format(stationary_dir, prefix, player, prob_fixed)
+                f.write(job.format(experiment_dir, prefix, player, prob_fixed, strat_file, response_player, iterations, response_file))
+
+                prefix = 'losspenalty_{0}'.format(percentage)
+                strat_file = strat_str.format(stationary_dir, prefix, player)
+                response_file = strat_str.format(stationary_dir, prefix, player, prob_fixed)
+                f.write(job.format(experiment_dir, prefix, player, prob_fixed, strat_file, response_player, iterations, response_file))
             for mean_int in range(-5,6):
                 mean = mean_int / 100.0
                 for stdev_int in range(1,6):
                     stdev = stdev_int / 100.0
-                    strat_file = strat_str.format(stationary_dir, 'gaussnoise_{0}_{1}'.format(mean, stdev), player)
-                    response_file = strat_str.format(stationary_dir, 'gaussnoise_{0}_{1}'.format(mean, stdev), player, prob_fixed)
-                    f.write(job.format(strat_file, response_player, prob_fixed, iterations, response_file))
+                    prefix = 'gaussnoise_{0}_{1}'.format(mean, stdev)
+                    strat_file = strat_str.format(stationary_dir, prefix, player)
+                    response_file = strat_str.format(stationary_dir, prefix, player, prob_fixed)
+                    f.write(job.format(experiment_dir, prefix, player, prob_fixed, strat_file, response_player, iterations, response_file))
 f.flush()
 f.close()
 
