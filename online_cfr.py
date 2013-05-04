@@ -8,13 +8,16 @@ import random
 import math
 
 class OnlineCFRAgent(Agent):
-    def __init__(self, rules, seat, gametree=None, exploration=0.5, exploration_decay=1):
+    def __init__(self, rules, seat, gametree=None, exploration=0.5, exploration_decay=1, recency_weighting=False, policy_weight=0.001, policy_decay=1):
         Agent.__init__(self, rules, seat)
         self.onpolicy = Strategy(seat)
         self.strategy = self.offpolicy = Strategy(seat)
         self.gametree = gametree
         self.exploration = exploration
         self.exploration_decay = exploration_decay
+        self.recency_weighting = recency_weighting
+        self.policy_decay = policy_decay
+        self.policy_weight = policy_weight
         if self.gametree is None:
             self.gametree = GameTree(rules)
         if self.gametree.root is None:
@@ -47,6 +50,8 @@ class OnlineCFRAgent(Agent):
             self.infoset_visits[infoset] = self.hands_played
         self.exploration *= self.exploration_decay
         self.hands_played += 1
+        if self.recency_weighting:
+            self.policy_weight *= self.policy_decay
         #print ''
 
     def set_infoset(self, infoset):
@@ -91,8 +96,12 @@ class OnlineCFRAgent(Agent):
         self.onpolicy.policy[self.infoset] = probs
         # Update the weighted policy probabilities (used to recover the average strategy)
         for i in range(3):
-            # Update the cumulative strategy using optimistic averaging (NIPS 2009, appendix)
-            self.action_reachprobs[self.infoset][i] += self.onpolicy_reachprob * probs[i] * (self.hands_played - self.infoset_visits[self.infoset])
+            if self.recency_weighting:
+                # Update the cumulative strategy using an exponential moving average
+                self.action_reachprobs[self.infoset][i] = self.onpolicy_reachprob * probs[i] * self.policy_weight + (1.0 - self.policy_weight) * self.action_reachprobs[self.infoset][i]
+            else:
+                # Update the cumulative strategy using optimistic averaging (NIPS 2009, appendix)
+                self.action_reachprobs[self.infoset][i] += self.onpolicy_reachprob * probs[i] * (self.hands_played - self.infoset_visits[self.infoset])
         if sum(self.action_reachprobs[self.infoset]) == 0:
             # Default strategy is equal weight
             self.offpolicy.policy[self.infoset] = self.equal_probs()
