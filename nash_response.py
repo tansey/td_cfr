@@ -22,7 +22,7 @@ class RestrictedNashResponse(CounterfactualRegretMinimizer):
         if root.player == self.response_player:
             action_probs = { hc: strategy.probs(self.rules.infoset_format(root.player, hc, root.board, root.bet_history)) for hc in reachprobs[root.player] }
         else:
-            action_probs = self.mix_probs(root, strategy)
+            action_probs = self.mix_probs(root, strategy, reachprobs)
         action_payoffs = [None, None, None]
         if root.fold_action:
             next_reachprobs[root.player] = { hc: action_probs[hc][FOLD] * reachprobs[root.player][hc] for hc in reachprobs[root.player] }
@@ -50,14 +50,14 @@ class RestrictedNashResponse(CounterfactualRegretMinimizer):
         self.cfr_regret_update(root, action_payoffs, payoffs[root.player])
         return payoffs
 
-    def mix_probs(self, root, cfr_strategy):
+    def mix_probs(self, root, cfr_strategy, reachprobs):
         action_probs = { }
         for hc in reachprobs[root.player]:
             probs = [0,0,0]
             fixed_probs = self.fixed_profile.strategies[root.player].probs(self.rules.infoset_format(root.player, hc, root.board, root.bet_history))
             cfr_probs = cfr_strategy.probs(self.rules.infoset_format(root.player, hc, root.board, root.bet_history))
             for i in range(3):
-                probs[i] = self.prob_fixed * fixed_probs[i] + (1.0 - self.prob_fixed) * cfr_probs[i]  }
+                probs[i] = self.prob_fixed * fixed_probs[i] + (1.0 - self.prob_fixed) * cfr_probs[i]
             action_probs[hc] = probs
         return action_probs
 
