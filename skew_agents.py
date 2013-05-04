@@ -4,6 +4,7 @@ sys.path.insert(0,os.path.realpath('../cfr/'))
 from pokertrees import *
 from pokerstrategy import *
 from pokercfr import *
+from pokergames import *
 import random
 
 class RewardShaper(object):
