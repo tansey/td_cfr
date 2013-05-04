@@ -27,6 +27,7 @@ make_directory(experiment_dir, 'error')
 f = open(jobsfile, 'wb')
 f.write("""universe = vanilla
 Executable=/lusr/bin/python
+Requirements = Precise
 +Group   = "GRAD"
 +Project = "AI_ROBOTICS"
 +ProjectDescription = "Stationary leduc agent creation"
