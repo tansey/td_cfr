@@ -42,16 +42,17 @@ Queue 1
 
 """
 
+iterations = 10000
 for player in range(2):
     for percentage_int in range(-10,11):
         percentage = percentage_int / 100.0
-        f.write(job.format(experiment_dir, 'winbonus_{0}'.format(percentage), player, 100000, 'winbonus', percentage))
-        f.write(job.format(experiment_dir, 'losspenalty_{0}'.format(percentage), player, 100000, 'losspenalty', percentage))
+        f.write(job.format(experiment_dir, 'winbonus_{0}'.format(percentage), player, iterations, 'winbonus', percentage))
+        f.write(job.format(experiment_dir, 'losspenalty_{0}'.format(percentage), player, iterations, 'losspenalty', percentage))
     for mean_int in range(-5,6):
         mean = mean_int / 100.0
         for stdev_int in range(1,6):
             stdev = stdev_int / 100.0
-            f.write(job.format(experiment_dir, 'gaussnoise_{0}_{1}'.format(mean, stdev), player, 100000, 'losspenalty', '{0} {1}'.format(mean, stdev)))
+            f.write(job.format(experiment_dir, 'gaussnoise_{0}_{1}'.format(mean, stdev), player, iterations, 'losspenalty', '{0} {1}'.format(mean, stdev)))
     
 f.flush()
 f.close()
