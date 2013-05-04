@@ -1,0 +1,1170 @@
+universe = vanilla
+Executable=/lusr/bin/python
++Group   = "GRAD"
++Project = "AI_ROBOTICS"
++ProjectDescription = "Stationary leduc agent creation"
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.1 0 100000 winbonus -0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.1 0 100000 losspenalty -0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.09 0 100000 winbonus -0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.09 0 100000 losspenalty -0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.08 0 100000 winbonus -0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.08 0 100000 losspenalty -0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.07 0 100000 winbonus -0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.07 0 100000 losspenalty -0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.06 0 100000 winbonus -0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.06 0 100000 losspenalty -0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.05 0 100000 winbonus -0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.05 0 100000 losspenalty -0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.04 0 100000 winbonus -0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.04 0 100000 losspenalty -0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.03 0 100000 winbonus -0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.03 0 100000 losspenalty -0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.02 0 100000 winbonus -0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.02 0 100000 losspenalty -0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.01 0 100000 winbonus -0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.01 0 100000 losspenalty -0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.0.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.0 0 100000 winbonus 0.0
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.0.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.0.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.0.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.0 0 100000 losspenalty 0.0
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.0.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.0.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.01 0 100000 winbonus 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.01 0 100000 losspenalty 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.02 0 100000 winbonus 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.02 0 100000 losspenalty 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.03 0 100000 winbonus 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.03 0 100000 losspenalty 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.04 0 100000 winbonus 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.04 0 100000 losspenalty 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.05 0 100000 winbonus 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.05 0 100000 losspenalty 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.06 0 100000 winbonus 0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.06 0 100000 losspenalty 0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.07 0 100000 winbonus 0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.07 0 100000 losspenalty 0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.08 0 100000 winbonus 0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.08 0 100000 losspenalty 0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.09 0 100000 winbonus 0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.09 0 100000 losspenalty 0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.1 0 100000 winbonus 0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.1 0 100000 losspenalty 0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.01 0 100000 losspenalty -0.05 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.02 0 100000 losspenalty -0.05 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.03 0 100000 losspenalty -0.05 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.04 0 100000 losspenalty -0.05 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.05 0 100000 losspenalty -0.05 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.01 0 100000 losspenalty -0.04 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.02 0 100000 losspenalty -0.04 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.03 0 100000 losspenalty -0.04 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.04 0 100000 losspenalty -0.04 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.05 0 100000 losspenalty -0.04 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.01 0 100000 losspenalty -0.03 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.02 0 100000 losspenalty -0.03 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.03 0 100000 losspenalty -0.03 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.04 0 100000 losspenalty -0.03 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.05 0 100000 losspenalty -0.03 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.01 0 100000 losspenalty -0.02 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.02 0 100000 losspenalty -0.02 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.03 0 100000 losspenalty -0.02 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.04 0 100000 losspenalty -0.02 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.05 0 100000 losspenalty -0.02 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.01 0 100000 losspenalty -0.01 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.02 0 100000 losspenalty -0.01 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.03 0 100000 losspenalty -0.01 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.04 0 100000 losspenalty -0.01 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.05 0 100000 losspenalty -0.01 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.01 0 100000 losspenalty 0.0 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.02 0 100000 losspenalty 0.0 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.03 0 100000 losspenalty 0.0 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.04 0 100000 losspenalty 0.0 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.05 0 100000 losspenalty 0.0 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.01 0 100000 losspenalty 0.01 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.02 0 100000 losspenalty 0.01 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.03 0 100000 losspenalty 0.01 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.04 0 100000 losspenalty 0.01 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.05 0 100000 losspenalty 0.01 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.01 0 100000 losspenalty 0.02 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.02 0 100000 losspenalty 0.02 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.03 0 100000 losspenalty 0.02 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.04 0 100000 losspenalty 0.02 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.05 0 100000 losspenalty 0.02 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.01 0 100000 losspenalty 0.03 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.02 0 100000 losspenalty 0.03 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.03 0 100000 losspenalty 0.03 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.04 0 100000 losspenalty 0.03 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.05 0 100000 losspenalty 0.03 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.01 0 100000 losspenalty 0.04 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.02 0 100000 losspenalty 0.04 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.03 0 100000 losspenalty 0.04 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.04 0 100000 losspenalty 0.04 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.05 0 100000 losspenalty 0.04 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.01 0 100000 losspenalty 0.05 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.02 0 100000 losspenalty 0.05 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.03 0 100000 losspenalty 0.05 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.04 0 100000 losspenalty 0.05 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.05 0 100000 losspenalty 0.05 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.1 1 100000 winbonus -0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.1 1 100000 losspenalty -0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.09 1 100000 winbonus -0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.09 1 100000 losspenalty -0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.08 1 100000 winbonus -0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.08 1 100000 losspenalty -0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.07 1 100000 winbonus -0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.07 1 100000 losspenalty -0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.06 1 100000 winbonus -0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.06 1 100000 losspenalty -0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.05 1 100000 winbonus -0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.05 1 100000 losspenalty -0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.04 1 100000 winbonus -0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.04 1 100000 losspenalty -0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.03 1 100000 winbonus -0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.03 1 100000 losspenalty -0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.02 1 100000 winbonus -0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.02 1 100000 losspenalty -0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_-0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_-0.01 1 100000 winbonus -0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_-0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_-0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_-0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_-0.01 1 100000 losspenalty -0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_-0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_-0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.0.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.0 1 100000 winbonus 0.0
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.0.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.0.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.0.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.0 1 100000 losspenalty 0.0
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.0.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.0.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.01 1 100000 winbonus 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.01 1 100000 losspenalty 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.02 1 100000 winbonus 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.02 1 100000 losspenalty 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.03 1 100000 winbonus 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.03 1 100000 losspenalty 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.04 1 100000 winbonus 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.04 1 100000 losspenalty 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.05 1 100000 winbonus 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.05 1 100000 losspenalty 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.06 1 100000 winbonus 0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.06.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.06 1 100000 losspenalty 0.06
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.06.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.06.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.07 1 100000 winbonus 0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.07.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.07 1 100000 losspenalty 0.07
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.07.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.07.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.08 1 100000 winbonus 0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.08.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.08 1 100000 losspenalty 0.08
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.08.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.08.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.09 1 100000 winbonus 0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.09.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.09 1 100000 losspenalty 0.09
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.09.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.09.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/winbonus_0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/winbonus_0.1 1 100000 winbonus 0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/winbonus_0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/winbonus_0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/losspenalty_0.1.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/losspenalty_0.1 1 100000 losspenalty 0.1
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/losspenalty_0.1.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/losspenalty_0.1.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.01 1 100000 losspenalty -0.05 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.02 1 100000 losspenalty -0.05 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.03 1 100000 losspenalty -0.05 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.04 1 100000 losspenalty -0.05 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.05_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.05_0.05 1 100000 losspenalty -0.05 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.05_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.05_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.01 1 100000 losspenalty -0.04 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.02 1 100000 losspenalty -0.04 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.03 1 100000 losspenalty -0.04 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.04 1 100000 losspenalty -0.04 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.04_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.04_0.05 1 100000 losspenalty -0.04 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.04_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.04_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.01 1 100000 losspenalty -0.03 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.02 1 100000 losspenalty -0.03 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.03 1 100000 losspenalty -0.03 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.04 1 100000 losspenalty -0.03 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.03_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.03_0.05 1 100000 losspenalty -0.03 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.03_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.03_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.01 1 100000 losspenalty -0.02 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.02 1 100000 losspenalty -0.02 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.03 1 100000 losspenalty -0.02 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.04 1 100000 losspenalty -0.02 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.02_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.02_0.05 1 100000 losspenalty -0.02 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.02_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.02_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.01 1 100000 losspenalty -0.01 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.02 1 100000 losspenalty -0.01 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.03 1 100000 losspenalty -0.01 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.04 1 100000 losspenalty -0.01 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_-0.01_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_-0.01_0.05 1 100000 losspenalty -0.01 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_-0.01_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_-0.01_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.01 1 100000 losspenalty 0.0 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.02 1 100000 losspenalty 0.0 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.03 1 100000 losspenalty 0.0 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.04 1 100000 losspenalty 0.0 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.0_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.0_0.05 1 100000 losspenalty 0.0 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.0_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.0_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.01 1 100000 losspenalty 0.01 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.02 1 100000 losspenalty 0.01 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.03 1 100000 losspenalty 0.01 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.04 1 100000 losspenalty 0.01 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.01_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.01_0.05 1 100000 losspenalty 0.01 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.01_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.01_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.01 1 100000 losspenalty 0.02 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.02 1 100000 losspenalty 0.02 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.03 1 100000 losspenalty 0.02 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.04 1 100000 losspenalty 0.02 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.02_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.02_0.05 1 100000 losspenalty 0.02 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.02_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.02_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.01 1 100000 losspenalty 0.03 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.02 1 100000 losspenalty 0.03 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.03 1 100000 losspenalty 0.03 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.04 1 100000 losspenalty 0.03 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.03_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.03_0.05 1 100000 losspenalty 0.03 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.03_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.03_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.01 1 100000 losspenalty 0.04 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.02 1 100000 losspenalty 0.04 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.03 1 100000 losspenalty 0.04 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.04 1 100000 losspenalty 0.04 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.04_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.04_0.05 1 100000 losspenalty 0.04 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.04_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.04_0.05.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.01.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.01 1 100000 losspenalty 0.05 0.01
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.01.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.01.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.02.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.02 1 100000 losspenalty 0.05 0.02
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.02.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.02.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.03.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.03 1 100000 losspenalty 0.05 0.03
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.03.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.03.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.04.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.04 1 100000 losspenalty 0.05 0.04
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.04.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.04.log
+Queue 1
+
+Log = /Users/wesley/Projects/td_cfr/stationary_agents/condor_logs/gaussnoise_0.05_0.05.log
+Arguments = skew_agents.py /Users/wesley/Projects/td_cfr/stationary_agents/results/gaussnoise_0.05_0.05 1 100000 losspenalty 0.05 0.05
+Output = /Users/wesley/Projects/td_cfr/stationary_agents/output/gaussnoise_0.05_0.05.out
+Error = /Users/wesley/Projects/td_cfr/stationary_agents/error/gaussnoise_0.05_0.05.log
+Queue 1
+

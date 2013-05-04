@@ -7,9 +7,7 @@ from environment import *
 from nash_response import *
 from skew_agents import *
 
-leduc = leduc_rules()
 
-create_skewed_agents(leduc, WinBonus([0,0.07]), 100000, 'orange', verbose=True)
 
 """
 cfr = RestrictedNashResponse(leduc, response_player, fixed_strategy_profile, prob_fixed)
