@@ -52,7 +52,7 @@ for player in range(2):
         mean = mean_int / 100.0
         for stdev_int in range(1,6):
             stdev = stdev_int / 100.0
-            f.write(job.format(experiment_dir, 'gaussnoise_{0}_{1}'.format(mean, stdev), player, iterations, 'losspenalty', '{0} {1}'.format(mean, stdev)))
+            f.write(job.format(experiment_dir, 'gaussnoise_{0}_{1}'.format(mean, stdev), player, iterations, 'gaussnoise', '{0} {1}'.format(mean, stdev)))
     
 f.flush()
 f.close()
