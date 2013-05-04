@@ -14,6 +14,8 @@ prob_fixed = float(sys.argv[3])
 iterations = int(sys.argv[4])
 out_file = sys.argv[5]
 
+leduc = leduc_rules()
+
 cfr = RestrictedNashResponse(leduc, response_player, fixed_strategy_profile, prob_fixed)
 
 iterations_per_block = 100
