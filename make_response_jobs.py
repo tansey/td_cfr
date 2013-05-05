@@ -57,12 +57,12 @@ for player in range(2):
                 
                 prefix = 'winbonus_{0}'.format(percentage)
                 strat_file = strat_str.format(stationary_dir, prefix, player)
-                response_file = strat_str.format(stationary_dir, prefix, player, prob_fixed)
+                response_file = response_str.format(stationary_dir, prefix, player, prob_fixed)
                 f.write(job.format(experiment_dir, prefix, player, prob_fixed, strat_file, response_player, iterations, response_file))
 
                 prefix = 'losspenalty_{0}'.format(percentage)
                 strat_file = strat_str.format(stationary_dir, prefix, player)
-                response_file = strat_str.format(stationary_dir, prefix, player, prob_fixed)
+                response_file = response_str.format(stationary_dir, prefix, player, prob_fixed)
                 f.write(job.format(experiment_dir, prefix, player, prob_fixed, strat_file, response_player, iterations, response_file))
             for mean_int in range(-5,6):
                 mean = mean_int / 100.0
@@ -70,7 +70,7 @@ for player in range(2):
                     stdev = stdev_int / 100.0
                     prefix = 'gaussnoise_{0}_{1}'.format(mean, stdev)
                     strat_file = strat_str.format(stationary_dir, prefix, player)
-                    response_file = strat_str.format(stationary_dir, prefix, player, prob_fixed)
+                    response_file = response_str.format(stationary_dir, prefix, player, prob_fixed)
                     f.write(job.format(experiment_dir, prefix, player, prob_fixed, strat_file, response_player, iterations, response_file))
 f.flush()
 f.close()
