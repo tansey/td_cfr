@@ -33,6 +33,9 @@ class Agent(object):
     def get_action(self):
         pass
 
+    def observe_action(self, player, board, bet_history, action):
+        pass
+
     def observe_reward(self, r):
         pass
 
@@ -128,6 +131,8 @@ class GameSimulator(object):
         agent.set_infoset(node.player_view)
         action = agent.get_action()
         next = node.valid(action)
+        for agent in self.agents:
+            agent.observe_action(node.player, node.board, node.bet_history, action)
         if self.verbose:
             self.print_action(action, node, next)
         return self.play_helper(next)
