@@ -11,13 +11,12 @@ from itertools import permutations
 from itertools import product
 from collections import Counter
 
-class BayesianBootstrappingAgent(Agent):
-    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5):
+class ImplicitModelingAgent(Agent):
+    def __init__(self, rules, seat, default_strategy, baseline, portfolio):
         Agent.__init__(self, rules, seat)
         self.opponent_seat = -1 * seat + 1
         self.baseline = baseline
         self.portfolio = portfolio
-        self.priors = { infoset: [x * initial_prior_strength for x in probs] for infoset,probs in self.baseline.policy.items() }
         self.opponent_model = Strategy(self.opponent_seat)
         self.opponent_model.policy = { infoset: probs for infoset,probs in self.baseline.policy.items() }
         self.strategy = Strategy(seat)
@@ -34,9 +33,8 @@ class BayesianBootstrappingAgent(Agent):
     def episode_over(self, state):
         """
         If the opponent revealed their cards, calculate the exact trajectory probability, otherwise
-        marginalize over all possible holecards. Then update our implicit models, sample one, use it to
-        generate samples for our explicit model, calculate a best response to the explicit model, and
-        store it as our new strategy.
+        marginalize over all possible holecards. Then update our implicit models, sample one, calculate 
+        a best response, and store it as our new strategy.
         """
         if state.players_in.count(True) == 2:
             # Showdown
@@ -55,12 +53,11 @@ class BayesianBootstrappingAgent(Agent):
                 self.observation_probs[i] *= prob
         # Use importance sampling (Thompson's response) to choose a model for our opponent
         implicit_model = self.sample_portfolio_model()
-        # Update our priors on the explicit model of the opponent
-        self.bootstrap_explicit_model(implicit_model)
-        # Use Thompson sampling to create a new explicit opponent model
-        self.sample_explicit_model()
-        # Calculate a best response to our new opponent model and use it as our strategy
+        print self.observation_probs
+        # Use the implicit model as the opponent model (Bayes' Bluff)
+        self.opponent_model = implicit_model
         self.update_strategy()
+
 
     def trajectory_probs(self, hc, hc_prob):
         """
@@ -104,26 +101,6 @@ class BayesianBootstrappingAgent(Agent):
                 print 'Choosing model {0}'.format(i)
                 return self.portfolio[i]
         raise Exception('Invalid distribution')
-
-    def sample_dirichlet(self, prior):
-        sample = [0,0,0]
-        for i in range(len(sample)):
-            if prior[i] == 0:
-                continue
-            else:
-                sample[i] = random.gammavariate(prior[i],1)
-        sample = [v/sum(sample) for v in sample]
-        return sample
-
-    def bootstrap_explicit_model(self, portfolio_model):
-        for infoset in self.opponent_model.policy:
-            prior = self.priors[infoset]
-            portfolio_probs = portfolio_model.probs(infoset)
-            for i in range(3):
-                prior[i] += portfolio_probs[i]
-
-    def sample_explicit_model(self):
-        self.opponent_model.policy = { infoset: self.sample_dirichlet(prior) for infoset,prior in self.priors.items() }
 
     def update_strategy(self):
         strategies = [None, None]

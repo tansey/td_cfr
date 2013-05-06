@@ -1,5 +1,9 @@
 *.py[cod]
 *.DS_Store
+implicit_results/*
+bayes_bluff/*
+explicit_results/*
+bootstrapping_results/*
 
 # C extensions
 *.so

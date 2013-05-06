@@ -31,20 +31,21 @@ Executable=/lusr/bin/python
 Requirements = Precise
 +Group   = "GRAD"
 +Project = "AI_ROBOTICS"
-+ProjectDescription = "Thompson Bayesian response to stationary leduc agents"
++ProjectDescription = "Bayesian response to stationary leduc agents"
 
 """)
 
 job = """Log = {0}/condor_logs/{1}.log
-Arguments = exploit.py {0}/results/{1}.csv
+Arguments = exploit.py {0}/results/{2}_{1}.csv {2}
 Output = {0}/output/{1}.out
 Error = {0}/error/{1}.log
 Queue 1
 
 """
 
-for match in range(2000):
-    f.write(job.format(experiment_dir, match))
+for model in ['implicit','bootstrapping']
+    for match in range(2000):
+        f.write(job.format(experiment_dir, match, model))
 f.flush()
 f.close()
 

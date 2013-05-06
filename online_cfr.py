@@ -80,6 +80,7 @@ class OnlineCFRAgent(Agent):
 
     def observe_reward(self, r):
         self.reward += r
+        self.winnings += r
 
     def update_policy(self):
         # Get the current CFR
