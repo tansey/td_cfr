@@ -1,0 +1,50 @@
+000 (014.279.000) 05/06 03:16:52 Job submitted from host: <128.83.144.69:57854>
+...
+001 (014.279.000) 05/06 03:17:54 Job executing on host: <128.83.144.82:41173>
+...
+006 (014.279.000) 05/06 03:17:54 Image size of job updated: 3000
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (014.279.000) 05/06 03:17:55 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request          
+	   Cpus                 :                 1          
+	   Disk (KB)            :     3000     3000          
+	   Memory (MB)          :        0        0          
+...
+000 (015.279.000) 05/06 03:25:38 Job submitted from host: <128.83.144.69:57854>
+...
+001 (015.279.000) 05/06 03:32:46 Job executing on host: <128.83.144.133:43747>
+...
+006 (015.279.000) 05/06 03:32:54 Image size of job updated: 153548
+	116  -  MemoryUsage of job (MB)
+	117784  -  ResidentSetSize of job (KB)
+...
+006 (015.279.000) 05/06 03:37:54 Image size of job updated: 163100
+	123  -  MemoryUsage of job (MB)
+	125852  -  ResidentSetSize of job (KB)
+...
+005 (015.279.000) 05/06 03:38:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:05:37, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:05:37, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request          
+	   Cpus                 :                 1          
+	   Disk (KB)            :     3000     3000          
+	   Memory (MB)          :      123      123          
+...

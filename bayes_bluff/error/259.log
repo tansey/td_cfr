@@ -1,0 +1,10 @@
+close failed in file object destructor:
+IOError: [Errno 122] Disk quota exceeded
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/apport_python_hook.py", line 61, in apport_excepthook
+    from cStringIO import StringIO
+RuntimeError: sys.meta_path must be a list of import hooks
+
+Original exception was:
+IOError: [Errno 122] Disk quota exceeded
