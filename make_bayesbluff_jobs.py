@@ -36,7 +36,7 @@ Requirements = Precise
 """)
 
 job = """Log = {0}/condor_logs/{1}.log
-Arguments = robust_response.py {0}/results/{1}.csv
+Arguments = exploit.py {0}/results/{1}.csv
 Output = {0}/output/{1}.out
 Error = {0}/error/{1}.log
 Queue 1
