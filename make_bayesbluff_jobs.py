@@ -43,7 +43,7 @@ Queue 1
 
 """
 
-for model in ['bootstrapping']:
+for model in ['subpolicy']:
     for match in range(500):
         f.write(job.format(experiment_dir, match, model))
 f.flush()
