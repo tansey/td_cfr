@@ -110,8 +110,8 @@ def plot(experiment_name, avg, stdev, stderr, trials, series):
         
         
         
-if len(sys.argv) != 2:
-    print "Format: python plot_results.py results_dir"
+if len(sys.argv) != 3:
+    print "Format: python plot_results.py results_dir experiment_name"
     exit(1)
 print "Plotting {0}".format(sys.argv[1])
-aggregate_results(experiment_name='subpolicy bootstrapping')
+aggregate_results(experiment_name=sys.argv[2])

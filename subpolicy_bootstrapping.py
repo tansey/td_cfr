@@ -112,7 +112,7 @@ class SubpolicyBootstrappingAgent(Agent):
                 if i == selected:
                     self.subpolicy_priors[i][1] += weight # succeed
                 if probs[i] > 0:
-                    self.subpolicy_priors[i][0] += (1.0 - probs[i])*(1.0 - probs[i]) * weight # fail
+                    self.subpolicy_priors[i][0] += weight #(1.0 - probs[i])*(1.0 - probs[i]) * weight # fail
         for observation in self.trajectory:
             infoset = self.rules.infoset_format(observation[0], hc, observation[1], observation[2])
             # sample bernoulli values for each eligible subpolicy
