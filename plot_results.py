@@ -114,4 +114,4 @@ if len(sys.argv) != 2:
     print "Format: python plot_results.py results_dir"
     exit(1)
 print "Plotting {0}".format(sys.argv[1])
-aggregate_results(experiment_name='bootstrap modeling')
+aggregate_results(experiment_name='subpolicy bootstrapping')
