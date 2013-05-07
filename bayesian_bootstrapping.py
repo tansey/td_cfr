@@ -42,20 +42,13 @@ class BayesianBootstrappingAgent(Agent):
             # Showdown
             #trajectory_logprobs = [math.log(x) for x in self.trajectory_probs(state.holecards[self.opponent_seat], 1)]
             trajprobs = self.trajectory_probs(state.holecards[self.opponent_seat], 1)
-            hc = state.holecards[self.opponent_seat]
-            for observation in self.trajectory:
-                infoset = self.rules.infoset_format(observation[0], hc, observation[1], observation[2])
-                self.priors[infoset][observation[3]] += 1
         else:
             # Somebody folded. No showdown, so marginalize out the hidden opponent holecards.
-            trajprobs = [1 for model in self.portfolio]
+            trajprobs = [0 for model in self.portfolio]
             for hc,hc_prob in self.possible_opponent_holecards().items():
                 probs = self.trajectory_probs(hc, hc_prob)
                 for i,p in enumerate(probs):
                     trajprobs[i] += p
-            for hc,hc_prob in self.possible_opponent_holecards().items():
-                infoset = self.rules.infoset_format(observation[0], hc, observation[1], observation[2])
-                self.priors[infoset][observation[3]] += hc_prob
             #trajectory_logprobs = [math.log(x) for x in trajectory_logprobs]
         # We're only interested in pseudo-likelihood, so store the logprobs to prevent buffer underflows
         for i,prob in enumerate(trajprobs):
