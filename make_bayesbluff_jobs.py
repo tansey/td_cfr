@@ -43,7 +43,7 @@ Queue 1
 
 """
 
-for model in [sys.argv[1].split(',')]:
+for model in sys.argv[1].split(','):
     for match in range(500):
         f.write(job.format(experiment_dir, match, model))
 f.flush()
