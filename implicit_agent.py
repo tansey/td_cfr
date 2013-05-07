@@ -42,7 +42,7 @@ class ImplicitModelingAgent(Agent):
             trajprobs = self.trajectory_probs(state.holecards[self.opponent_seat], 1)
         else:
             # Somebody folded. No showdown, so marginalize out the hidden opponent holecards.
-            trajprobs = [1 for model in self.portfolio]
+            trajprobs = [0 for model in self.portfolio]
             for hc,hc_prob in self.possible_opponent_holecards().items():
                 probs = self.trajectory_probs(hc, hc_prob)
                 for i,p in enumerate(probs):
