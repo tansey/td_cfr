@@ -29,6 +29,6 @@ for i in range(100):
     s.save_to_file(strat_dir + 'skewednash_{0}'.format(i))
 
 skew_strategy(nash1, [0.05,-0.30,0.25], [0.05,-0.30,0.25]).save_to_file(strat_dir + 'tight_aggressive.strat')
-skew_strategy(nash1, [-0.25,0.25,0], [-0.25,0.25,0]).save_to_file(strat_dir + 'loose_passive.strat')
 skew_strategy(nash1, [-0.30,0.05,0.25], [-0.30,0.05,0.25]).save_to_file(strat_dir + 'loose_aggressive.strat')
 skew_strategy(nash1, [0.25,-0.15,-0.10], [0.25,-0.15,-0.10]).save_to_file(strat_dir + 'tight_passive.strat')
+skew_strategy(nash1, [-0.25,0.25,0], [-0.25,0.25,0]).save_to_file(strat_dir + 'loose_passive.strat')

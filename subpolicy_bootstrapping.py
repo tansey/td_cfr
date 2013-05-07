@@ -12,11 +12,15 @@ from itertools import product
 from collections import Counter
 
 class SubpolicyBootstrappingAgent(Agent):
-    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5, min_subpolicy_deviation=0.05, max_subpolicy_range=0.1):
+    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5, min_subpolicy_deviation=0.05, max_subpolicy_range=0.25, min_subpolicy_size=3):
         Agent.__init__(self, rules, seat)
         self.opponent_seat = -1 * seat + 1
         self.baseline = baseline
         self.portfolio = portfolio
+        self.min_subpolicy_deviation = min_subpolicy_deviation
+        self.max_subpolicy_range = max_subpolicy_range
+        self.min_subpolicy_size = min_subpolicy_size
+        self.infer_subpolicies()
         self.priors = { infoset: [x * initial_prior_strength for x in probs] for infoset,probs in self.baseline.policy.items() }
         self.opponent_model = Strategy(self.opponent_seat)
         self.opponent_model.policy = { infoset: probs for infoset,probs in self.baseline.policy.items() }
@@ -33,24 +37,31 @@ class SubpolicyBootstrappingAgent(Agent):
             for infoset in model.policy:
                 model_probs = model.probs(infoset)
                 baseline_probs = self.baseline.probs(infoset)
-                deviation = [model_probs[i] / baseline_probs[i] - 1 for i in range(3)]
+                deviation = [model_probs[i] / baseline_probs[i] - 1 if baseline_probs[i] > 0 else model_probs[i] for i in range(3)]
                 # Filter out cases where the opponent plays close to the NE
                 if self.L2_distance(deviation, [0,0,0]) > self.min_subpolicy_deviation:
                     model_dev[infoset] = deviation
             # Cluster the infosets based on L2 distance
-            next_centroid = None
-            next_subpolicy = None
+            found = 0
             while len(model_dev) > 0:
+                next_centroid = None
+                next_subpolicy = None
                 for infoset,deviation in model_dev.items():
                     if next_subpolicy is None:
+                        #print deviation
                         next_centroid = deviation
                         next_subpolicy = [infoset]
                         model_dev.pop(infoset)
-                    elif self.L2_distance(deviation, next_centroid) < max_subpolicy_range:
+                    elif self.L2_distance(deviation, next_centroid) < self.max_subpolicy_range:
+                        #print '\t{0}'.format(deviation)
                         next_subpolicy.append(infoset)
                         model_dev.pop(infoset)
-                self.subpolicies.append({ infoset: probs for infoset,probs in model.items() if infoset in next_subpolicy })
-            print 'Found {0} subpolicies, with lengths {1}'.format(len(self.subpolicies[-1]), [len(x) for x in self.subpolicies[-1]])
+                subpolicy = { infoset: probs for infoset,probs in model.policy.items() if infoset in next_subpolicy }
+                if len(subpolicy) > self.min_subpolicy_size:
+                    self.subpolicies.append(subpolicy)
+                    found += 1
+            print 'Found {0} subpolicies, with lengths {1}'.format(found, [len(x) for x in self.subpolicies[-found:]])
+        #sys.exit()
 
     def L2_distance(self, p1, p2):
         return math.sqrt(sum([(p1[i] - p2[i])**2 for i in range(len(p1))]))
@@ -63,7 +74,7 @@ class SubpolicyBootstrappingAgent(Agent):
 
     def episode_over(self, state):
         """
-        If the opponent revealed their cards, calculate the exact trajectory probability, otherwise
+        If the opponent revealed their cards, calculate the exact subset trajectory probabilities, otherwise
         marginalize over all possible holecards. Then update our implicit models, sample one, use it to
         generate samples for our explicit model, calculate a best response to the explicit model, and
         store it as our new strategy.
