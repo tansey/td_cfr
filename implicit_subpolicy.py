@@ -56,8 +56,10 @@ class ImplicitSubpolicyModelingAgent(Agent):
             preflop_subpolicy_idx = self.importance_sampling(self.preflop_observation_probs)
             self.implicit_preflop = self.preflop_portfolio[preflop_subpolicy_idx]
             if len(flop_trajectory) > 0:
+                # Marginalize out preflop subpolicies
+                reachprob = sum([preflop_trajprobs[i] * self.preflop_observation_probs[i] for i in range(len(preflop_trajprobs))]) / sum(self.preflop_observation_probs)
                 # Calculate flop trajectory probability for every flop subpolicy
-                flop_trajprobs = self.trajectory_probs(state.holecards[self.opponent_seat], 1, self.flop_portfolio, flop_trajectory)
+                flop_trajprobs = self.trajectory_probs(state.holecards[self.opponent_seat], reachprob, self.flop_portfolio, flop_trajectory)
                 # Update the total probability, independent of preflop probabilities
                 for i,prob in enumerate(flop_trajprobs):
                     self.flop_observation_probs[i] *= prob
@@ -82,7 +84,7 @@ class ImplicitSubpolicyModelingAgent(Agent):
                 # Marginalize out preflop subpolicies
                 for i,preflop_model in enumerate(preflop_trajprobs):
                     for hc,hc_prob in preflop_model.iteritems():
-                        hc_probs[hc] += self.preflop_observation_probs[i] * hc_prob
+                        hc_probs[hc] += self.preflop_observation_probs[i] * hc_prob / sum(self.preflop_observation_probs)
                 # Calculate flop trajectory probability for every flop subpolicy, given we are marginalizing out holecards
                 flop_trajprobs = [[] for model in self.flop_portfolio]
                 for hc,hc_prob in hc_probs.items():
