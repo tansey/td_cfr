@@ -11,8 +11,8 @@ from itertools import permutations
 from itertools import product
 from collections import Counter
 
-class BayesianBootstrappingAgent(Agent):
-    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5):
+class SubpolicyBootstrappingAgent(Agent):
+    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5, min_subpolicy_deviation=0.05, max_subpolicy_range=0.1):
         Agent.__init__(self, rules, seat)
         self.opponent_seat = -1 * seat + 1
         self.baseline = baseline
@@ -24,6 +24,36 @@ class BayesianBootstrappingAgent(Agent):
         self.strategy.policy = { infoset: probs for infoset,probs in default_strategy.policy.items() }
         self.observation_probs = [1 for model in portfolio]
         self.winnings = 0
+
+    def infer_subpolicies(self):
+        self.subpolicies = []
+        for model in self.portfolio:
+            # Calculate how much the model deviates from the baseline strategy at each point
+            model_dev = {}
+            for infoset in model.policy:
+                model_probs = model.probs(infoset)
+                baseline_probs = self.baseline.probs(infoset)
+                deviation = [model_probs[i] / baseline_probs[i] - 1 for i in range(3)]
+                # Filter out cases where the opponent plays close to the NE
+                if self.L2_distance(deviation, [0,0,0]) > self.min_subpolicy_deviation:
+                    model_dev[infoset] = deviation
+            # Cluster the infosets based on L2 distance
+            next_centroid = None
+            next_subpolicy = None
+            while len(model_dev) > 0:
+                for infoset,deviation in model_dev.items():
+                    if next_subpolicy is None:
+                        next_centroid = deviation
+                        next_subpolicy = [infoset]
+                        model_dev.pop(infoset)
+                    elif self.L2_distance(deviation, next_centroid) < max_subpolicy_range:
+                        next_subpolicy.append(infoset)
+                        model_dev.pop(infoset)
+                self.subpolicies.append({ infoset: probs for infoset,probs in model.items() if infoset in next_subpolicy })
+            print 'Found {0} subpolicies, with lengths {1}'.format(len(self.subpolicies[-1]), [len(x) for x in self.subpolicies[-1]])
+
+    def L2_distance(self, p1, p2):
+        return math.sqrt(sum([(p1[i] - p2[i])**2 for i in range(len(p1))]))
 
     def episode_starting(self):
         self.trajectory = []
@@ -52,8 +82,7 @@ class BayesianBootstrappingAgent(Agent):
             #trajectory_logprobs = [math.log(x) for x in trajectory_logprobs]
         # We're only interested in pseudo-likelihood, so store the logprobs to prevent buffer underflows
         for i,prob in enumerate(trajprobs):
-        #    self.observation_probs[i] *= prob
-            self.observation_probs[i] = prob
+                self.observation_probs[i] *= prob
         # Use importance sampling (Thompson's response) to choose a model for our opponent
         implicit_model = self.sample_portfolio_model()
         # Update our priors on the explicit model of the opponent

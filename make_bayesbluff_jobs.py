@@ -43,8 +43,8 @@ Queue 1
 
 """
 
-for model in ['explicit','bootstrapping']:
-    for match in range(2000):
+for model in ['bootstrapping']:
+    for match in range(500):
         f.write(job.format(experiment_dir, match, model))
 f.flush()
 f.close()
