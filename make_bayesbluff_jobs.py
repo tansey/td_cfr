@@ -20,12 +20,14 @@ experiment_dir = make_directory(os.getcwd(), experiment_name.replace(' ', '_'))
 stationary_dir = make_directory(os.getcwd(), 'stationary_agents')
 jobsfile = experiment_dir + '/jobs'
 
-make_directory(experiment_dir, 'condor_logs')
+#make_directory(experiment_dir, 'condor_logs')
 make_directory(experiment_dir, 'results')
 make_directory(experiment_dir, 'results/simple')
 make_directory(experiment_dir, 'results/complex')
 make_directory(experiment_dir, 'output')
-make_directory(experiment_dir, 'error')
+make_directory(experiment_dir, 'output/simple')
+make_directory(experiment_dir, 'output/complex')
+#make_directory(experiment_dir, 'error')
 
 f = open(jobsfile, 'wb')
 f.write("""universe = vanilla
@@ -37,10 +39,9 @@ Requirements = Precise
 
 """)
 
-job = """Log = {0}/condor_logs/{1}.log
+job = """
 Arguments = exploit.py {0}/results/{3}/{2}_{1}.csv {2} {3} {4}
-Output = {0}/output/{1}.out
-Error = {0}/error/{1}.log
+Error = {0}/error/{3}/{1}.log
 Queue 1
 
 """
