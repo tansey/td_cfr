@@ -25,11 +25,12 @@ make_directory(experiment_dir, 'results')
 make_directory(experiment_dir, 'results/simple')
 make_directory(experiment_dir, 'results/complex')
 make_directory(experiment_dir, 'results/nash')
-make_directory(experiment_dir, 'output')
-make_directory(experiment_dir, 'output/simple')
-make_directory(experiment_dir, 'output/complex')
-make_directory(experiment_dir, 'output/nash')
-#make_directory(experiment_dir, 'error')
+#make_directory(experiment_dir, 'output')
+make_directory(experiment_dir, 'error')
+make_directory(experiment_dir, 'error/simple')
+make_directory(experiment_dir, 'error/complex')
+make_directory(experiment_dir, 'error/nash')
+
 
 f = open(jobsfile, 'wb')
 f.write("""universe = vanilla
