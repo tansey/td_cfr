@@ -45,7 +45,7 @@ Queue 1
 
 for model in sys.argv[1].split(','):
     for match in range(int(sys.argv[2])):
-        for difficulty in ['simple','complex']
+        for difficulty in ['simple','complex']:
             f.write(job.format(experiment_dir, match, model, difficulty))
 f.flush()
 f.close()
