@@ -12,7 +12,7 @@ from itertools import product
 from collections import Counter
 
 class BayesianBootstrappingAgent(Agent):
-    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5):
+    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=2):
         Agent.__init__(self, rules, seat)
         self.opponent_seat = -1 * seat + 1
         self.baseline = baseline

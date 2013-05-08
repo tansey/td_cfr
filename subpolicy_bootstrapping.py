@@ -12,7 +12,7 @@ from itertools import product
 from collections import Counter
 
 class SubpolicyBootstrappingAgent(Agent):
-    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=5, min_subpolicy_deviation=0.05, max_subpolicy_range=0.25, min_subpolicy_size=3):
+    def __init__(self, rules, seat, default_strategy, baseline, portfolio, initial_prior_strength=2, min_subpolicy_deviation=0.05, max_subpolicy_range=0.1, min_subpolicy_size=3):
         Agent.__init__(self, rules, seat)
         self.opponent_seat = -1 * seat + 1
         self.baseline = baseline
