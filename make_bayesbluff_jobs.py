@@ -22,6 +22,8 @@ jobsfile = experiment_dir + '/jobs'
 
 make_directory(experiment_dir, 'condor_logs')
 make_directory(experiment_dir, 'results')
+make_directory(experiment_dir, 'results/simple')
+make_directory(experiment_dir, 'results/complex')
 make_directory(experiment_dir, 'output')
 make_directory(experiment_dir, 'error')
 
@@ -36,7 +38,7 @@ Requirements = Precise
 """)
 
 job = """Log = {0}/condor_logs/{1}.log
-Arguments = exploit.py {0}/results/{2}_{1}.csv {2} {3}
+Arguments = exploit.py {0}/results/{3}/{2}_{1}.csv {2} {3}
 Output = {0}/output/{1}.out
 Error = {0}/error/{1}.log
 Queue 1
