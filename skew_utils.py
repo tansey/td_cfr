@@ -32,17 +32,28 @@ strat_dir = 'stationary_agents/results/'
 nash1 = Strategy(1, strat_dir +'nash1.strat')
 for i in range(100):
     round_mods = [[0,0,0],[0,0,0]]
-    mod = [random.randrange(0,101) / 100.0 for _ in range(3)]
-    mod = [x / sum(mod) for x in mod]
+    mod = [random.randrange(0,101) for _ in range(3)]
+    mod = [x / float(sum(mod)) for x in mod]
     round_mods[random.randrange(0,2)] = mod
     card_mods = [[0,0,0],[0,0,0],[0,0,0]]
     for i in range(2):
-        mod = [random.randrange(0,101) / 100.0 for _ in range(3)]
-        mod = [x / sum(mod) for x in mod]
+        mod = [random.randrange(0,101) for _ in range(3)]
+        mod = [x / float(sum(mod)) for x in mod]
         card_mods[random.randrange(0,3)] = mod
     print 'Rounds: {0} Cards: {1}'.format(round_mods, card_mods)
     s = skew_strategy(nash1, round_mods[0], round_mods[1], card_mods[0], card_mods[1], card_mods[2])
-    s.save_to_file(strat_dir + 'skewednash_{0}'.format(i))
+    s.save_to_file(strat_dir + 'skewednash_complex_{0}'.format(i))
+
+for i in range(100):
+    preflop = [random.randrange(0,101) for _ in range(3)]
+    preflop = [x / float(sum(preflop)) for x in preflop]
+    flop = [random.randrange(0,101) for _ in range(3)]
+    flop = [x / float(sum(flop)) for x in flop]
+    round_mods = [preflop, flop]
+    card_mods = [[0,0,0],[0,0,0],[0,0,0]]
+    print 'Rounds: {0} Cards: {1}'.format(round_mods, card_mods)
+    s = skew_strategy(nash1, round_mods[0], round_mods[1], card_mods[0], card_mods[1], card_mods[2])
+    s.save_to_file(strat_dir + 'skewednash_simple_{0}'.format(i))
 
 skew_strategy(nash1, [0.05,-0.30,0.25], [0.05,-0.30,0.25], [0,0,0], [0,0,0], [0,0,0]).save_to_file(strat_dir + 'tight_aggressive.strat')
 skew_strategy(nash1, [-0.30,0.05,0.25], [-0.30,0.05,0.25], [0,0,0], [0,0,0], [0,0,0]).save_to_file(strat_dir + 'loose_aggressive.strat')

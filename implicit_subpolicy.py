@@ -69,7 +69,7 @@ class ImplicitSubpolicyModelingAgent(Agent):
         else:
             # Somebody folded. No showdown, so marginalize out the hidden opponent holecards.
             preflop_trajprobs = [{} for model in self.preflop_portfolio]
-            for hc,hc_prob in self.possible_opponent_holecards().items():
+            for hc,hc_prob in self.possible_opponent_holecards(state):
                 probs = self.trajectory_probs(hc, hc_prob, self.preflop_portfolio, preflop_trajectory)
                 for i,p in enumerate(probs):
                     preflop_trajprobs[i][hc] = p
@@ -80,7 +80,7 @@ class ImplicitSubpolicyModelingAgent(Agent):
             preflop_subpolicy_idx = self.importance_sampling(self.preflop_observation_probs)
             self.implicit_preflop = self.preflop_portfolio[preflop_subpolicy_idx]
             if len(flop_trajectory) > 0:
-                hc_probs = {hc: 0 for hc in self.possible_opponent_holecards()}
+                hc_probs = {hc: 0 for hc,prob in self.possible_opponent_holecards(state)}
                 # Marginalize out preflop subpolicies
                 for i,preflop_model in enumerate(preflop_trajprobs):
                     for hc,hc_prob in preflop_model.iteritems():
@@ -89,10 +89,14 @@ class ImplicitSubpolicyModelingAgent(Agent):
                 flop_trajprobs = [[] for model in self.flop_portfolio]
                 for hc,hc_prob in hc_probs.items():
                     probs = self.trajectory_probs(hc, hc_prob, self.flop_portfolio, flop_trajectory)
+                    for i in range(len(probs)):
+                        flop_trajprobs[i].append(probs[i])
                 # Update the total probability of each subpolicy
                 for i,p in enumerate(flop_trajprobs):
                     self.flop_observation_probs[i] *= sum(p)
                 # Importance sampling to choose a flop subpolicy, given we marginalized out our preflop model
+                #print 'Preflop trajprobs: {0}'.format(preflop_trajprobs)
+                #print 'hc_probs: {0}'.format(hc_probs)
                 flop_subpolicy_idx = self.importance_sampling(self.flop_observation_probs)
                 self.implicit_flop = self.flop_portfolio[flop_subpolicy_idx]
         # Use the implicit model as the opponent model (Bayes' Bluff)
@@ -112,7 +116,7 @@ class ImplicitSubpolicyModelingAgent(Agent):
                 trajprobs[model] *= portfolio[model][infoset][observation[3]]
         return trajprobs
 
-    def possible_opponent_holecards(self):
+    def possible_opponent_holecards(self, state):
         deck = [x for x in self.rules.deck if x not in state.holecards[self.seat]]
         x = Counter(combinations(deck, len(state.holecards[self.opponent_seat])))
         d = float(sum(x.values()))

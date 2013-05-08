@@ -36,7 +36,7 @@ Requirements = Precise
 """)
 
 job = """Log = {0}/condor_logs/{1}.log
-Arguments = exploit.py {0}/results/{2}_{1}.csv {2}
+Arguments = exploit.py {0}/results/{2}_{1}.csv {2} {3}
 Output = {0}/output/{1}.out
 Error = {0}/error/{1}.log
 Queue 1
@@ -45,7 +45,8 @@ Queue 1
 
 for model in sys.argv[1].split(','):
     for match in range(int(sys.argv[2])):
-        f.write(job.format(experiment_dir, match, model))
+        for difficulty in ['simple','complex']
+            f.write(job.format(experiment_dir, match, model, difficulty))
 f.flush()
 f.close()
 

@@ -45,7 +45,7 @@ class BayesianBootstrappingAgent(Agent):
         else:
             # Somebody folded. No showdown, so marginalize out the hidden opponent holecards.
             trajprobs = [0 for model in self.portfolio]
-            for hc,hc_prob in self.possible_opponent_holecards().items():
+            for hc,hc_prob in self.possible_opponent_holecards(state):
                 probs = self.trajectory_probs(hc, hc_prob)
                 for i,p in enumerate(probs):
                     trajprobs[i] += p
@@ -74,7 +74,7 @@ class BayesianBootstrappingAgent(Agent):
                 trajprobs[model] *= self.portfolio[model].probs(infoset)[observation[3]]
         return trajprobs
 
-    def possible_opponent_holecards(self):
+    def possible_opponent_holecards(self, state):
         deck = [x for x in self.rules.deck if x not in state.holecards[self.seat]]
         x = Counter(combinations(deck, len(state.holecards[self.opponent_seat])))
         d = float(sum(x.values()))

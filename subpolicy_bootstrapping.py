@@ -83,8 +83,6 @@ class SubpolicyBootstrappingAgent(Agent):
         marginalize over all possible holecards. Then update our implicit models, sample one, use it to
         generate samples for our explicit model, calculate a best response to the explicit model, and
         store it as our new strategy.
-
-        TODO: Divide subpolicy probs by # of infosets?
         """
         if state.players_in.count(True) == 2:
             # Showdown
@@ -92,8 +90,8 @@ class SubpolicyBootstrappingAgent(Agent):
         else:
             # Somebody folded. No showdown, so marginalize out the hidden opponent holecards.
             trajprobs = [0 for model in self.portfolio]
-            for hc,hc_prob in self.possible_opponent_holecards().items():
-                update_priors(hc, hc_prob)
+            for hc,hc_prob in self.possible_opponent_holecards(state):
+                self.update_priors(hc, hc_prob)
         # Use Thompson sampling to create a new explicit opponent model
         self.sample_explicit_model()
         # Calculate a best response to our new opponent model and use it as our strategy
@@ -122,7 +120,7 @@ class SubpolicyBootstrappingAgent(Agent):
             # update the opponent model
             self.bootstrap_explicit_model(sample_subpolicy, weight)
 
-    def possible_opponent_holecards(self):
+    def possible_opponent_holecards(self, state):
         deck = [x for x in self.rules.deck if x not in state.holecards[self.seat]]
         x = Counter(combinations(deck, len(state.holecards[self.opponent_seat])))
         d = float(sum(x.values()))

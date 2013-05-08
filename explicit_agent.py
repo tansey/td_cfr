@@ -41,15 +41,16 @@ class ExplicitModelingAgent(Agent):
                 self.priors[infoset][observation[3]] += 1
         else:
             # Somebody folded. No showdown, so marginalize out the hidden opponent holecards.
-            for hc,hc_prob in self.possible_opponent_holecards().items():
-                infoset = self.rules.infoset_format(observation[0], hc, observation[1], observation[2])
-                self.priors[infoset][observation[3]] += hc_prob
+            for hc,hc_prob in self.possible_opponent_holecards(state):
+                for observation in self.trajectory:
+                    infoset = self.rules.infoset_format(observation[0], hc, observation[1], observation[2])
+                    self.priors[infoset][observation[3]] += hc_prob
         # Use Thompson sampling to create a new explicit opponent model
         self.sample_explicit_model()
         # Calculate a best response to our new opponent model and use it as our strategy
         self.update_strategy()
 
-    def possible_opponent_holecards(self):
+    def possible_opponent_holecards(self, state):
         deck = [x for x in self.rules.deck if x not in state.holecards[self.seat]]
         x = Counter(combinations(deck, len(state.holecards[self.opponent_seat])))
         d = float(sum(x.values()))
