@@ -4,6 +4,7 @@ implicit_results/*
 bayes_bluff/*
 explicit_results/*
 bootstrapping_results/*
+data/*
 
 # C extensions
 *.so
