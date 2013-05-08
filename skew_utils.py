@@ -36,7 +36,7 @@ for i in range(100):
     mod = [x / float(sum(mod)) for x in mod]
     round_mods[random.randrange(0,2)] = mod
     card_mods = [[0,0,0],[0,0,0],[0,0,0]]
-    for i in range(2):
+    for j in range(2):
         mod = [random.randrange(0,101) for _ in range(3)]
         mod = [x / float(sum(mod)) for x in mod]
         card_mods[random.randrange(0,3)] = mod

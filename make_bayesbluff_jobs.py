@@ -24,9 +24,11 @@ jobsfile = experiment_dir + '/jobs'
 make_directory(experiment_dir, 'results')
 make_directory(experiment_dir, 'results/simple')
 make_directory(experiment_dir, 'results/complex')
+make_directory(experiment_dir, 'results/nash')
 make_directory(experiment_dir, 'output')
 make_directory(experiment_dir, 'output/simple')
 make_directory(experiment_dir, 'output/complex')
+make_directory(experiment_dir, 'output/nash')
 #make_directory(experiment_dir, 'error')
 
 f = open(jobsfile, 'wb')
@@ -48,7 +50,7 @@ Queue 1
 
 for model in sys.argv[1].split(','):
     for match in range(int(sys.argv[2])):
-        for difficulty in ['simple','complex']:
+        for difficulty in ['simple','complex','nash']:
             f.write(job.format(experiment_dir, match, model, difficulty, match % 100))
 f.flush()
 f.close()
