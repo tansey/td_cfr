@@ -17,6 +17,7 @@ class TDCFRAgent(Agent):
         self.exploration_decay = exploration_decay
         self.learning_rate = learning_rate
         self.learning_rate_decay = learning_rate_decay
+        self.winnings = 0
         if self.gametree is None:
             self.gametree = GameTree(rules)
         if self.gametree.root is None:
@@ -138,6 +139,7 @@ class TDCFRAgent(Agent):
 
     def observe_reward(self, r):
         self.reward += r
+        self.winnings += r
 
     """
     def update_policy(self, infoset):
