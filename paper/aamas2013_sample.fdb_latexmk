@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex aamas2013_sample"] 1368075110 "aamas2013_sample.aux" "aamas2013_sample.bbl" "aamas2013_sample" 1368075214
+["bibtex aamas2013_sample"] 1368138276 "aamas2013_sample.aux" "aamas2013_sample.bbl" "aamas2013_sample" 1368138277
   "/usr/local/texlive/2012/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "aamas2013_sample.aux" 1368075214 2105 75e9825469418aecbb3331547535d649 ""
+  "aamas2013_sample.aux" 1368138277 3093 354eb7ee609abad2cb240cbdb9e7eba6 ""
   "aamas2013_sample.bcf" 0 -1 0 ""
-  "sigproc.bib" 1368074549 3951 bd70260e168ec776d6a74b2cb949a311 ""
+  "sigproc.bib" 1368121259 5544 5a7dcfb4d348dccf758ab57021afced5 ""
   (generated)
   "aamas2013_sample.blg"
   "aamas2013_sample.bbl"
-["pdflatex"] 1368075213 "aamas2013_sample.tex" "aamas2013_sample.pdf" "aamas2013_sample" 1368075214
+["pdflatex"] 1368138277 "aamas2013_sample.tex" "aamas2013_sample.pdf" "aamas2013_sample" 1368138277
   "/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2012/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2012/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -82,6 +82,8 @@
   "/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty" 1335995445 19987 01cb2f3c1d21e5f05711b7fd50b17f2a ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/ae/omsaer.fd" 1191308783 1202 7a21ae4cb5dfaa29769836172235cfe6 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aer.fd" 1191308783 1844 da911cbbb4e7e5dc2776545b8b9cbc06 ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithm.sty" 1251330371 3249 15763257e50278eef5db1952ccde229c ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithmic.sty" 1251330371 9318 793e9d5a71e74e730d97f6bf5d7e2bca ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1246382020 5548 21cc890100eeac7a6a792024ef2889eb ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1246382020 13613 9d8ad59dafa33583045d4f2c7f2a4863 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd" 1246382020 955 d0043fae981c93e583f3f271f791633c ""
@@ -92,9 +94,11 @@
   "/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty" 1156703163 5082 c925b14d21ef5c56597fe90e8e1686ad ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty" 1156703163 3745 bcdc4858c6f7cfeb8e957b4284216414 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty" 1254151887 4435 b97063eb2f20be499e7725926af85c55 ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty" 1254151887 5022 2ec7815b07dc68e65542e23a180bc839 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/base/latexsym.sty" 1254151887 2717 322ad1a37c6c9974574bf6f55cbc9d77 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def" 1254151887 9172 67c33288b50eb57eab968f345e8befb0 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd" 1254151887 1873 1e483a609ec3be8f16f6337fa0dc20e3 ""
+  "/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/epsfig.sty" 1156702488 3106 a896e5fe135d4485f72ce6c9d8459d2e ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty" 1254151804 14183 42a8fc761b806986eef292369afc2988 ""
   "/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty" 1156702488 7882 3bd78469d444e8d494e27cfd7ca92719 ""
@@ -111,9 +115,9 @@
   "/usr/local/texlive/2012/texmf.cnf" 1341108668 572 7ea7194897937febeb63145e1c3a1f03 ""
   "/usr/local/texlive/2012/texmf/web2c/texmf.cnf" 1336865692 31299 729e216d9b945005c0d4b079c0500bc9 ""
   "aamas2013.cls" 1349156342 57592 17264824a69a0266a0c94f2543c1277e ""
-  "aamas2013_sample.aux" 1368075214 2105 75e9825469418aecbb3331547535d649 ""
-  "aamas2013_sample.bbl" 1368075111 3041 934b187c767f4b6728cc9a1c0a8243a8 "bibtex aamas2013_sample"
-  "aamas2013_sample.tex" 1368075211 13054 de4101eebbe2d172bf7aff50262ec38b ""
+  "aamas2013_sample.aux" 1368138277 3093 354eb7ee609abad2cb240cbdb9e7eba6 ""
+  "aamas2013_sample.bbl" 1368138277 4224 f04cdfe38eb428790a4a157eb6e117d4 "bibtex aamas2013_sample"
+  "aamas2013_sample.tex" 1368138267 27743 37f0feba1ec78ad683a8778cf9c27f80 ""
   (generated)
   "aamas2013_sample.log"
   "aamas2013_sample.pdf"

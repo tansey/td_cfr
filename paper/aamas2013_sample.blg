@@ -3,44 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: aamas2013_sample.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-You've used 12 entries,
+Warning--can't use both volume and number fields in gilpin2006competitive
+Warning--can't use both volume and number fields in sutton1998reinforcement
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            575 strings with 6223 characters,
-and the built_in function-call counts, 5120 in all, are:
-= -- 521
-> -- 246
-< -- 5
-+ -- 97
-- -- 84
-* -- 366
-:= -- 810
-add.period$ -- 39
-call.type$ -- 12
-change.case$ -- 78
+            605 strings with 7179 characters,
+and the built_in function-call counts, 7057 in all, are:
+= -- 713
+> -- 341
+< -- 9
++ -- 137
+- -- 116
+* -- 507
+:= -- 1117
+add.period$ -- 56
+call.type$ -- 17
+change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 191
-empty$ -- 384
-format.name$ -- 84
-if$ -- 1093
+cite$ -- 19
+duplicate$ -- 270
+empty$ -- 529
+format.name$ -- 116
+if$ -- 1507
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 12
-newline$ -- 63
-num.names$ -- 24
-pop$ -- 81
+int.to.str$ -- 17
+missing$ -- 18
+newline$ -- 88
+num.names$ -- 34
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 92
 quote$ -- 0
-skip$ -- 146
+skip$ -- 202
 stack$ -- 0
-substring$ -- 377
-swap$ -- 62
-text.length$ -- 5
+substring$ -- 481
+swap$ -- 88
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 0
-while$ -- 51
-width$ -- 14
-write$ -- 136
+type$ -- 66
+warning$ -- 2
+while$ -- 69
+width$ -- 19
+write$ -- 194
+(There were 2 warnings)

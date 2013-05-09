@@ -66,6 +66,14 @@ INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aer.fd
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aer.fd
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/ae/aer9.tfm
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithm.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithm.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
 INPUT aamas2013_sample.aux
 INPUT aamas2013_sample.aux
 OUTPUT aamas2013_sample.aux
@@ -132,9 +140,6 @@ INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aer9.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
-INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aer6.vf
-INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aebx9.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
@@ -146,6 +151,9 @@ INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmsl9.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aer6.vf
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
 INPUT aamas2013_sample.bbl
 INPUT aamas2013_sample.bbl
 INPUT aamas2013_sample.aux

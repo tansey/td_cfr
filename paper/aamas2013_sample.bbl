@@ -12,6 +12,11 @@ N.~Bard, M.~Johanson, N.~Burch, and M.~Bowling.
 \newblock Online implicit agent modelling.
 \newblock {\em Autonomous Agents and Multiagent Systems (AAMAS'13)}, 2013.
 
+\bibitem{billings2002challenge}
+D.~Billings, A.~Davidson, J.~Schaeffer, and D.~Szafron.
+\newblock The challenge of poker.
+\newblock {\em Artificial Intelligence}, 134(1):201--240, 2002.
+
 \bibitem{simplemodels}
 I.~Erev and A.~E. Roth.
 \newblock Multi-agent learning and the descriptive value of simple models.
@@ -24,6 +29,21 @@ S.~Ganzfried and T.~Sandholm.
 \newblock In {\em The 10th International Conference on Autonomous Agents and
   Multiagent Systems-Volume 2}, pages 533--540. International Foundation for
   Autonomous Agents and Multiagent Systems, 2011.
+
+\bibitem{gilpin2007gradient}
+A.~Gilpin, S.~Hoda, J.~Pena, and T.~Sandholm.
+\newblock Gradient-based algorithms for finding nash equilibria in extensive
+  form games.
+\newblock In {\em Internet and Network Economics}, pages 57--69. Springer,
+  2007.
+
+\bibitem{gilpin2006competitive}
+A.~Gilpin and T.~Sandholm.
+\newblock A competitive texas hold'em poker player via automated abstraction
+  and real-time equilibrium computation.
+\newblock In {\em Proceedings of the National Conference on Artificial
+  Intelligence}, volume~21, page 1007. Menlo Park, CA; Cambridge, MA; London;
+  AAAI Press; MIT Press; 1999, 2006.
 
 \bibitem{regretmatching}
 S.~Hart and A.~Mas-Colell.
@@ -56,6 +76,11 @@ M.~Lanctot, K.~Waugh, M.~Zinkevich, and M.~Bowling.
 \newblock {\em Advances in Neural Information Processing Systems (NIPS'09)},
   22:1078--1086, 2009.
 
+\bibitem{ponsen2009evolutionary}
+M.~Ponsen, K.~Tuyls, M.~Kaisers, and J.~Ramon.
+\newblock An evolutionary game-theoretic analysis of poker strategies.
+\newblock {\em Entertainment Computing}, 1(1):39--45, 2009.
+
 \bibitem{bayesbluff}
 F.~Southey, M.~Bowling, B.~Larson, C.~Piccione, N.~Burch, D.~Billings, and
   D.~C. Rayner.
@@ -67,6 +92,11 @@ F.~Southey, M.~Bowling, B.~Larson, C.~Piccione, N.~Burch, D.~Billings, and
 F.~Southey, B.~Hoehn, and R.~C. Holte.
 \newblock Effective short-term opponent exploitation in simplified poker.
 \newblock {\em Machine learning}, 74(2):159--189, 2009.
+
+\bibitem{sutton1998reinforcement}
+R.~S. Sutton and A.~G. Barto.
+\newblock {\em Reinforcement learning: An introduction}, volume~1.
+\newblock Cambridge Univ Press, 1998.
 
 \bibitem{cfr}
 M.~Zinkevich, M.~Johanson, M.~Bowling, and C.~Piccione.
