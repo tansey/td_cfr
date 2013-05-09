@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: aamas2013_sample.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-You've used 10 entries,
+You've used 12 entries,
             2118 wiz_defined-function locations,
-            562 strings with 5877 characters,
-and the built_in function-call counts, 4322 in all, are:
-= -- 434
-> -- 220
-< -- 4
-+ -- 87
-- -- 76
-* -- 315
-:= -- 691
-add.period$ -- 32
-call.type$ -- 10
-change.case$ -- 68
+            575 strings with 6223 characters,
+and the built_in function-call counts, 5120 in all, are:
+= -- 521
+> -- 246
+< -- 5
++ -- 97
+- -- 84
+* -- 366
+:= -- 810
+add.period$ -- 39
+call.type$ -- 12
+change.case$ -- 78
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 157
-empty$ -- 316
-format.name$ -- 76
-if$ -- 914
+cite$ -- 12
+duplicate$ -- 191
+empty$ -- 384
+format.name$ -- 84
+if$ -- 1093
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 10
-newline$ -- 53
-num.names$ -- 20
-pop$ -- 70
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 63
+num.names$ -- 24
+pop$ -- 81
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 66
 quote$ -- 0
-skip$ -- 119
+skip$ -- 146
 stack$ -- 0
-substring$ -- 310
-swap$ -- 50
-text.length$ -- 4
+substring$ -- 377
+swap$ -- 62
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
+type$ -- 48
 warning$ -- 0
-while$ -- 42
-width$ -- 12
-write$ -- 113
+while$ -- 51
+width$ -- 14
+write$ -- 136

@@ -12,6 +12,19 @@ N.~Bard, M.~Johanson, N.~Burch, and M.~Bowling.
 \newblock Online implicit agent modelling.
 \newblock {\em Autonomous Agents and Multiagent Systems (AAMAS'13)}, 2013.
 
+\bibitem{simplemodels}
+I.~Erev and A.~E. Roth.
+\newblock Multi-agent learning and the descriptive value of simple models.
+\newblock {\em Artificial intelligence}, 171(7):423--428, 2007.
+
+\bibitem{dbbr}
+S.~Ganzfried and T.~Sandholm.
+\newblock Game theory-based opponent modeling in large imperfect-information
+  games.
+\newblock In {\em The 10th International Conference on Autonomous Agents and
+  Multiagent Systems-Volume 2}, pages 533--540. International Foundation for
+  Autonomous Agents and Multiagent Systems, 2011.
+
 \bibitem{regretmatching}
 S.~Hart and A.~Mas-Colell.
 \newblock A general class of adaptive strategies.

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex aamas2013_sample"] 1368072121 "aamas2013_sample.aux" "aamas2013_sample.bbl" "aamas2013_sample" 1368072123
+["bibtex aamas2013_sample"] 1368075110 "aamas2013_sample.aux" "aamas2013_sample.bbl" "aamas2013_sample" 1368075214
   "/usr/local/texlive/2012/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "aamas2013_sample.aux" 1368072122 1894 0f48d80c3ce239ee57feb9f983ad96a8 ""
+  "aamas2013_sample.aux" 1368075214 2105 75e9825469418aecbb3331547535d649 ""
   "aamas2013_sample.bcf" 0 -1 0 ""
-  "sigproc.bib" 1368071646 3285 410c95fa5a9d6d9278c07101fa302eba ""
+  "sigproc.bib" 1368074549 3951 bd70260e168ec776d6a74b2cb949a311 ""
   (generated)
   "aamas2013_sample.blg"
   "aamas2013_sample.bbl"
-["pdflatex"] 1368072122 "aamas2013_sample.tex" "aamas2013_sample.pdf" "aamas2013_sample" 1368072123
+["pdflatex"] 1368075213 "aamas2013_sample.tex" "aamas2013_sample.pdf" "aamas2013_sample" 1368075214
   "/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2012/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2012/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -111,9 +111,9 @@
   "/usr/local/texlive/2012/texmf.cnf" 1341108668 572 7ea7194897937febeb63145e1c3a1f03 ""
   "/usr/local/texlive/2012/texmf/web2c/texmf.cnf" 1336865692 31299 729e216d9b945005c0d4b079c0500bc9 ""
   "aamas2013.cls" 1349156342 57592 17264824a69a0266a0c94f2543c1277e ""
-  "aamas2013_sample.aux" 1368072122 1894 0f48d80c3ce239ee57feb9f983ad96a8 ""
-  "aamas2013_sample.bbl" 1368072122 2518 a2d2bae9431b192e4761b3105867d3d5 "bibtex aamas2013_sample"
-  "aamas2013_sample.tex" 1368072114 9810 9b17dd90d9ce2ecb79b1eb9fdcdcf823 ""
+  "aamas2013_sample.aux" 1368075214 2105 75e9825469418aecbb3331547535d649 ""
+  "aamas2013_sample.bbl" 1368075111 3041 934b187c767f4b6728cc9a1c0a8243a8 "bibtex aamas2013_sample"
+  "aamas2013_sample.tex" 1368075211 13054 de4101eebbe2d172bf7aff50262ec38b ""
   (generated)
   "aamas2013_sample.log"
   "aamas2013_sample.pdf"

@@ -94,7 +94,26 @@ Experiments were performed on all four of our proposed algorithms and the standa
 
 
 
-\section{Discussion and Future Work}
+\section{Discussion}
+
+\section{Future work}
+The experiments conducted in this paper reveal several opportunities for future research. In this section, we highlight some of the areas that we believe are ripe for future work:
+
+\begin{itemize}
+\item \textbf{Learning opponent models from incomplete information.} DBRs \cite{dbr} require a large number of well-chosen, perfect-information samples to form strong opponent models that can then be used online. In contrast, an approach like Deviation-Based Best Resonses (DBBRs) \cite{dbbr} can potentially model opponents through incomplete information observations, but requires a startup phase of T hands to exploit an opponent. Ideally an exploitive agent would develop models that are both immediately exploitable and feasible to gather in practice.
+
+\item \textbf{Increasing sample efficiency.} It seems intuitive that most real-world opponents' exploitable actions are correlated in a systematic way; this intuition has been noted by other researchers \cite{shortterm} as well. Increasing the information derived from opponent observations, whether from subpolicy analysis or some other approach, is critical to the success of future exploitive agent research.
+
+\item \textbf{Subpolicy discovery.} Uncovering which subregions of opponent policies may contain the same systematic bias holds a large amount of potential. The straight-forward approach to subpolicy discovery through better feature engineering is a pragmatic approach, but a more general approach would be more powerful and be applicable to a wider class of games.
+
+\item \textbf{Incremental best response calculation.} When maintaining an explicit opponent model where updates are made to only a portion of the model at each point, calculating a full best response may be unnecessary. In games such as Texas Hold'em, the full best response may be too computationally expensive to compute after every hand. An approach that can update only the parts of the model that are effected at each turn could vastly speed up the algorithm, with important practical implications.
+
+\item \textbf{Modeling non-stationary opponents.} The vast majority of exploitive play in poker has assumed a stationary opponent, likely due to the presumed drastic increase in difficulty of opponent modeling. Fortunately, while this may be the case for game theoretic non-stationary agents, humans appear to use relatively simple models that are weighted heavily towards recent observations \cite{simplemodels}. Broadening the class of opponents to include such simple agents may hit the sweet spot of analytic tractability and real-world applicability.
+
+\item \textbf{Deceptively teaching opponents.} All exploitive poker research to date has ignored the potential for teaching opponents an exploitable model. It seems reasonable that situations would present themselves, particularly against humans or agents using ``foresight-free'' models \cite{simplemodels}, where an agent could cheaply teach an opponent a policy that is exploitable for a much larger amount.
+\end{itemize}
+
+The above list has highlighted only some of the opportunities in the area of online opponent modeling. Given the small amount of research in the area, there may be numerous additional fruitful avenues of research.
 
 \section{Conclusions}
 
