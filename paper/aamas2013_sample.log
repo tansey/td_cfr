@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 17:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -298,35 +298,43 @@ File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
- [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Overfull \hbox (10.16185pt too wide) in paragraph at lines 63--64
+\T1/aer/m/n/9 ably walk a strat-egy pro-file to-wards a cor-re-lated $\OML/cmm/
+m/it/9 ^^O$\T1/aer/m/n/9 -equilibrium.[]
+ []
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (./aamas2013_sample.bbl) [2
-
-] (./aamas2013_sample.aux) ) 
+]
+(./aamas2013_sample.bbl) [2] (./aamas2013_sample.aux) ) 
 Here is how much of TeX's memory you used:
- 2781 strings out of 493488
- 35500 string characters out of 3141326
- 95609 words of memory out of 3000000
- 6019 multiletter control sequences out of 15000+200000
- 48393 words of font info for 65 fonts, out of 3000000 for 9000
+ 2794 strings out of 493488
+ 35596 string characters out of 3141326
+ 97637 words of memory out of 3000000
+ 6029 multiletter control sequences out of 15000+200000
+ 50546 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,10n,26p,952b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips
-/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/l
-ocal/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on aamas2013_sample.pdf (2 pages, 116318 bytes).
+ 41i,10n,26p,1330b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012
+/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8
+a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on aamas2013_sample.pdf (2 pages, 149963 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,47 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{exp4}
+P.~Auer, N.~Cesa-Bianchi, Y.~Freund, and R.~E. Schapire.
+\newblock Gambling in a rigged casino: The adversarial multi-armed bandit
+  problem.
+\newblock In {\em Foundations of Computer Science, 1995. Proceedings., 36th
+  Annual Symposium on}, pages 322--331. IEEE, 1995.
+
+\bibitem{implicit}
+N.~Bard, M.~Johanson, N.~Burch, and M.~Bowling.
+\newblock Online implicit agent modelling.
+\newblock {\em Autonomous Agents and Multiagent Systems (AAMAS'13)}, 2013.
+
+\bibitem{regretmatching}
+S.~Hart and A.~Mas-Colell.
+\newblock A general class of adaptive strategies.
+\newblock {\em Journal of Economic Theory}, 98(1):26--54, 2001.
+
+\bibitem{pcs}
+M.~Johanson, N.~Bard, M.~Lanctot, R.~Gibson, and M.~Bowling.
+\newblock Efficient nash equilibrium approximation through monte carlo
+  counterfactual regret minimization.
+\newblock In {\em Proceedings of the 11th International Conference on
+  Autonomous Agents and Multiagent Systems (AAMAS'12)}, pages 837--846.
+  International Foundation for Autonomous Agents and Multiagent Systems, 2012.
+
+\bibitem{dbr}
+M.~Johanson and M.~Bowling.
+\newblock Data biased robust counter strategies.
+\newblock In {\em Proceedings of the Twelfth International Conference on
+  Artificial Intelligence and Statistics (AISTATS'09)}, pages 264--271, 2009.
+
+\bibitem{rnr}
+M.~Johanson, M.~Zinkevich, and M.~Bowling.
+\newblock Computing robust counter-strategies.
+\newblock {\em Advances in neural information processing systems (NIPS'07)},
+  20:721--728, 2007.
+
+\bibitem{mccfr}
+M.~Lanctot, K.~Waugh, M.~Zinkevich, and M.~Bowling.
+\newblock Monte carlo sampling for regret minimization in extensive games.
+\newblock {\em Advances in Neural Information Processing Systems (NIPS'09)},
+  22:1078--1086, 2009.
 
 \bibitem{bayesbluff}
 F.~Southey, M.~Bowling, B.~Larson, C.~Piccione, N.~Burch, D.~Billings, and
@@ -6,5 +49,16 @@ F.~Southey, M.~Bowling, B.~Larson, C.~Piccione, N.~Burch, D.~Billings, and
 \newblock Bayes' bluff: Opponent modelling in poker.
 \newblock In {\em Proceedings of the 21st Annual Conference on Uncertainty in
   Artificial Intelligence (UAI'05)}, pages 550--558, 2005.
+
+\bibitem{shortterm}
+F.~Southey, B.~Hoehn, and R.~C. Holte.
+\newblock Effective short-term opponent exploitation in simplified poker.
+\newblock {\em Machine learning}, 74(2):159--189, 2009.
+
+\bibitem{cfr}
+M.~Zinkevich, M.~Johanson, M.~Bowling, and C.~Piccione.
+\newblock Regret minimization in games with incomplete information.
+\newblock {\em Advances in neural information processing systems (NIPS'08)},
+  20:1729--1736, 2008.
 
 \end{thebibliography}

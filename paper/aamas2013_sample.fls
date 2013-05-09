@@ -118,6 +118,7 @@ INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/ae/aebx9.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/ae/aeti9.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ae/omsaer.fd
 INPUT /usr/local/texlive/2012/texmf-dist/tex/latex/ae/omsaer.fd
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/ae/aer6.tfm
 OUTPUT aamas2013_sample.pdf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
@@ -130,6 +131,9 @@ INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aer9.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aer6.vf
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/vf/public/ae/aebx9.vf
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
@@ -147,9 +151,12 @@ INPUT aamas2013_sample.bbl
 INPUT aamas2013_sample.aux
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
 INPUT /usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
