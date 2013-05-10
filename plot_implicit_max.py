@@ -58,7 +58,7 @@ model_nums = [i for i in range(200)]
 
 print 'Computing maximum potential performance'
 
-samples = 1000
+samples = 500
 for complexity_i,difficulty in enumerate(['simple', 'complex']):
     results = []
     subpolicy_results = []
@@ -87,7 +87,7 @@ for complexity_i,difficulty in enumerate(['simple', 'complex']):
     ax.set_xlabel('Max portfolio exploitability (bets/hand)')
     ax.set_ylabel('Best portfolio response (pct of samples)'.format(difficulty))
     ax.set_title('Maximum Implicit Modeling Performance\n({0} trials, {1} opponent)'.format(samples, difficulty))
-    plt.savefig('{0}fullpolicy_{1}.png'.format(output_dir, difficulty))
+    plt.savefig('{0}fullpolicy_{1}.pdf'.format(output_dir, difficulty))
     plt.clf()
     # the histogram of the data
     fig = plt.figure()
@@ -96,7 +96,7 @@ for complexity_i,difficulty in enumerate(['simple', 'complex']):
     ax.set_xlabel('Max subpolicy exploitability (bets/hand)')
     ax.set_ylabel('Best subpolicy responses (pct of samples)'.format(difficulty))
     ax.set_title('Maximum Implicit Subpolicy Modeling Performance\n({0} trials, {1} opponent)'.format(samples, difficulty))
-    plt.savefig('{0}subpolicy_{1}.png'.format(output_dir, difficulty))
+    plt.savefig('{0}subpolicy_{1}.pdf'.format(output_dir, difficulty))
     plt.clf()
     # the histogram of the data
     fig = plt.figure()
@@ -105,7 +105,7 @@ for complexity_i,difficulty in enumerate(['simple', 'complex']):
     ax.set_xlabel('Max subpolicy exploitability gain (bets/hand)')
     ax.set_ylabel('Gain (pct of samples)'.format(difficulty))
     ax.set_title('Maximum Implicit Subpolicy Modeling Performance Gain\n({0} trials, {1} opponent)'.format(samples, difficulty))
-    plt.savefig('{0}gain_{1}.png'.format(output_dir, difficulty))
+    plt.savefig('{0}gain_{1}.pdf'.format(output_dir, difficulty))
     plt.clf()
 
 

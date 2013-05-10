@@ -145,6 +145,7 @@ def plot(results_dir, experiment_name, experiment_subtitle, stat_name, avg, stde
     ax = plt.subplot(111)
     for i in range(len(avg)):
         xvals = [hand for hand in range(1,len(avg[i])+1)]
+        plt.xlim([0,len(xvals)])
         # Plot each series
         plt.plot(xvals, avg[i], label=series[i+1].replace(' ','\n'), color=colors[i])
         plt.fill_between(xvals, avg[i] + stderr[i], avg[i] - stderr[i], facecolor=colors[i], alpha=0.2)
@@ -157,7 +158,7 @@ def plot(results_dir, experiment_name, experiment_subtitle, stat_name, avg, stde
     ax.set_position([box.x0, box.y0, box.width * 0.75, box.height])
     # Put a legend to the right of the current axis
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    plt.savefig('{0}{1}.png'.format(results_dir, stat_name.lower()))
+    plt.savefig('{0}{1}.pdf'.format(results_dir, stat_name.lower()))
     plt.clf()
         
         

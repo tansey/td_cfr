@@ -29,7 +29,7 @@ for difficulty in ['simple', 'complex']:
     ax.set_xlabel('Exploitability')
     ax.set_ylabel('# of {0} skewed strategies'.format(difficulty))
     ax.set_title('Agent exploitability\n({0} skewing)'.format(difficulty))
-    plt.savefig('{0}{1}.png'.format(output_dir,difficulty))
+    plt.savefig('{0}{1}.pdf'.format(output_dir,difficulty))
     plt.clf()
     
 
