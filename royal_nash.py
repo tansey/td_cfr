@@ -5,6 +5,10 @@ from pokergames import *
 from pokerstrategy import *
 from pokercfr import *
 
+results_dir = sys.argv[1]
+if not results_dir.endswith('/'):
+    results_dir += '/'
+
 print 'Computing NE for Royal poker'
 royal = royal_rules()
 
@@ -20,6 +24,6 @@ for block in range(blocks):
     print 'Total exploitability: {0}'.format(sum(result[1]))
     print 'Saving strategies...'
     for i,s in enumerate(cfr.profile.strategies):
-        s.save_to_file('royal_nash{0}.strat'.format(i))
+        s.save_to_file('{0}royal_nash{1}.strat'.format(results_dir, i))
 print 'Done!'
 print ''
