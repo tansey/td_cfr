@@ -91,22 +91,22 @@ class GameSimulator(object):
         self.verbose = verbose
         self.showhands = showhands
         self.rules = rules
-        self.tree = GameTree(rules)
+        self.tree = PublicTree(rules)
         self.tree.build()
 
     def play(self):
         for agent in self.agents:
             agent.episode_starting()
-        self.play_helper(self.tree.root)
+        self.play_helper(self.tree.root, [() for agent in self.agents])
 
-    def play_helper(self, node):
+    def play_helper(self, node, holecards):
         if type(node) is TerminalNode:
             return self.terminal_node(node)
         if type(node) is HolecardChanceNode or type(node) is BoardcardChanceNode:
             return self.chance_node(node)
         return self.action_node(node)
 
-    def terminal_node(self, node):
+    def terminal_node(self, node, holecards):
         for i,agent in enumerate(self.agents):
             agent.observe_reward(node.payoffs[i])
             agent.episode_over(node)
